@@ -27,8 +27,9 @@ function User() {
 
   return (
     <div>
+      <h2>Users page</h2>
+
       <div className="headers">
-        <h2>Users page</h2>
         <Headers></Headers>
       </div>
       <div className="content">
