@@ -19,7 +19,7 @@ function Admin() {
             </li>
           </ul>
         </nav>
-        <h1>Admin</h1>
+        <h1>Adminnnnn</h1>
         <User></User>
       </div>
       <Route path="/admin/add" component={Add}></Route>

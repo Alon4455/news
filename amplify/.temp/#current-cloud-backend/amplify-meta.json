@@ -1,0 +1,38 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-newsproj-dev-213934-authRole",
+      "UnauthRoleArn": "arn:aws:iam::711426451221:role/amplify-newsproj-dev-213934-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::711426451221:role/amplify-newsproj-dev-213934-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-newsproj-dev-213934-deployment",
+      "UnauthRoleName": "amplify-newsproj-dev-213934-unauthRole",
+      "StackName": "amplify-newsproj-dev-213934",
+      "StackId": "arn:aws:cloudformation:us-east-1:711426451221:stack/amplify-newsproj-dev-213934/1f16d620-073a-11eb-9e6c-12dc156c2e93",
+      "AmplifyAppId": "d38gsjp16dfehx"
+    }
+  },
+  "auth": {
+    "newsproj43cec162": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "output": {
+        "AppClientSecret": "80c59pfmsr8djgrolkirltquusoeabcp5qb4bp0jq2uakfe3u3j",
+        "UserPoolId": "us-east-1_AVPL37nW0",
+        "AppClientIDWeb": "b7336h3jvr4a2nb59h2n84ci1",
+        "AppClientID": "ui2vkqreu1rgadu3ieo5efjkl",
+        "IdentityPoolId": "us-east-1:dd97d127-b578-4eac-a37e-54958946faab",
+        "IdentityPoolName": "newsproj43cec162_identitypool_43cec162__dev",
+        "UserPoolName": "newsproj43cec162_userpool_43cec162"
+      },
+      "lastPushTimeStamp": "2020-10-05T20:43:08.599Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-newsproj-dev-213934-deployment/amplify-cfn-templates/auth/newsproj43cec162-cloudformation-template.yml",
+        "logicalId": "authnewsproj43cec162"
+      },
+      "lastPushDirHash": "yL7UCldoCfFoOqUAvUj5QIjDszc="
+    }
+  }
+}
