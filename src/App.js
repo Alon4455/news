@@ -2,7 +2,10 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import User from "./components/User";
 import Admin from "./components/Admin";
-
+import Amplify, { Auth } from "aws-amplify";
+import awsconfig from "./aws-exports";
+import { withAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react";
+Amplify.configure(awsconfig);
 function App() {
   return (
     <Router>
@@ -23,4 +26,4 @@ function App() {
     </Router>
   );
 }
-export default App;
+export default withAuthenticator(App);
