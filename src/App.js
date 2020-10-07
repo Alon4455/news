@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import User from "./components/User";
 import Admin from "./components/Admin";
-import Amplify, { Auth } from "aws-amplify";
+import Amplify from "aws-amplify";
 import awsconfig from "./aws-exports";
 import { withAuthenticator, AmplifySignOut } from "@aws-amplify/ui-react";
 Amplify.configure(awsconfig);
@@ -18,10 +18,13 @@ function App() {
             <li>
               <Link to="/admin">Admin</Link>
             </li>
+            <li>
+              <AmplifySignOut />
+            </li>
           </ul>
         </nav>
-        <Route path="/user" component={User} />
-        <Route path="/admin" component={Admin} />
+        <Route exact path="/user" component={User} />
+        <Route exact path="/admin" component={Admin} />
       </div>
     </Router>
   );

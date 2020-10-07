@@ -1,13 +1,19 @@
+import { Button, Tooltip } from "@material-ui/core";
 import React from "react";
 function News(props) {
-  let date = new Date();
-
   return (
-    <div>
-      <h2 onClick={props.onClick}>{props.header}</h2>
-
-      <p>{date.toLocaleDateString()}</p>
-      <p>{date.toLocaleTimeString()}</p>
+    <div className="post-title-btn">
+      <Tooltip arrow title={<h3>{props.content}</h3>}>
+        <Button
+          style={{
+            borderRadius: 100,
+            color: "red",
+          }}
+          onClick={props.onClick}
+        >
+          {props.title}
+        </Button>
+      </Tooltip>
     </div>
   );
 }

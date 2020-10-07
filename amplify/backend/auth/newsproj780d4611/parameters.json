@@ -1,8 +1,8 @@
 {
-    "identityPoolName": "newsproj43cec162_identitypool_43cec162",
+    "identityPoolName": "newsproj780d4611_identitypool_780d4611",
     "allowUnauthenticatedIdentities": false,
-    "resourceNameTruncated": "newspr43cec162",
-    "userPoolName": "newsproj43cec162_userpool_43cec162",
+    "resourceNameTruncated": "newspr780d4611",
+    "userPoolName": "newsproj780d4611_userpool_780d4611",
     "autoVerifiedAttributes": [
         "email"
     ],
@@ -28,10 +28,10 @@
     "userpoolClientReadAttributes": [
         "email"
     ],
-    "userpoolClientLambdaRole": "newspr43cec162_userpoolclient_lambda_role",
+    "userpoolClientLambdaRole": "newspr780d4611_userpoolclient_lambda_role",
     "userpoolClientSetAttributes": false,
-    "sharedId": "43cec162",
-    "resourceName": "newsproj43cec162",
+    "sharedId": "780d4611",
+    "resourceName": "newsproj780d4611",
     "authSelections": "identityPoolAndUserPool",
     "authRoleArn": {
         "Fn::GetAtt": [
@@ -50,6 +50,5 @@
         "email"
     ],
     "userPoolGroupList": [],
-    "serviceName": "Cognito",
     "dependsOn": []
 }

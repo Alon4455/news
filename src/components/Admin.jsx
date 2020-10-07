@@ -1,5 +1,4 @@
 import React from "react";
-import User from "./User";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Add from "./Add";
 import Del from "./Del";
@@ -19,8 +18,7 @@ function Admin() {
             </li>
           </ul>
         </nav>
-        <h1>Adminnnnn</h1>
-        <User></User>
+        <h1>Admin page</h1>
       </div>
       <Route path="/admin/add" component={Add}></Route>
       <Route path="/admin/del" component={Del}></Route>

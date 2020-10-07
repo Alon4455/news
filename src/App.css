@@ -16,14 +16,24 @@ nav {
   text-decoration: none;
 }
 .headers {
-  margin-top: 2vw;
-  display: flex;
-  align-items: center;
-  background-color: rgb(66, 168, 216);
   border-radius: 10px;
-  justify-content: space-around;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
+
 .content {
-  border: black solid 2px;
+  border: grey 1px solid;
+  border-radius: 10px;
+  background-color: rgb(241, 100, 100);
+}
+
+.user-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50em;
+}
+.post-title-btn {
+  border: 0.5px solid grey;
+  border-radius: 50px;
+  width: max-content;
 }

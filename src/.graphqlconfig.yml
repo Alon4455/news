@@ -1,5 +1,5 @@
 projects:
-  myapi-dev:
+  newsproj:
     schemaPath: src/graphql/schema.json
     includes:
       - src/graphql/**/*.js
@@ -8,11 +8,8 @@ projects:
     extensions:
       amplify:
         codeGenTarget: javascript
-        generatedFileName: ''
+        generatedFileName: ""
         docsFilePath: src/graphql
-        region: us-east-1
-        apiId: tumrta3t45dhjd7jhb7cmizsiq
-        maxDepth: 2
 extensions:
   amplify:
     version: 3

@@ -1,0 +1,11 @@
+{
+    "AppSyncApiName": "newsproj",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": "false",
+    "AuthCognitoUserPoolId": {
+        "Fn::GetAtt": [
+            "authnewsproj780d4611",
+            "Outputs.UserPoolId"
+        ]
+    }
+}
