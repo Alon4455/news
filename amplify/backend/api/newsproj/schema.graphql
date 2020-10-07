@@ -1,4 +1,4 @@
-type Blog @model {
+type News @model {
   id: ID!
   title: String!
   category: String!

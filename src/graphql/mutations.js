@@ -3,10 +3,10 @@
 
 export const createNews = /* GraphQL */ `
   mutation CreateNews(
-    $input: CreateBlogInput!
-    $condition: ModelBlogConditionInput
+    $input: CreateNewsInput!
+    $condition: ModelNewsConditionInput
   ) {
-    createBlog(input: $input, condition: $condition) {
+    createNews(input: $input, condition: $condition) {
       id
       title
       category
@@ -18,10 +18,10 @@ export const createNews = /* GraphQL */ `
 `;
 export const updateNews = /* GraphQL */ `
   mutation UpdateNews(
-    $input: UpdateBlogInput!
-    $condition: ModelBlogConditionInput
+    $input: UpdateNewsInput!
+    $condition: ModelNewsConditionInput
   ) {
-    updateBlog(input: $input, condition: $condition) {
+    updateNews(input: $input, condition: $condition) {
       id
       title
       category
@@ -33,10 +33,10 @@ export const updateNews = /* GraphQL */ `
 `;
 export const deleteNews = /* GraphQL */ `
   mutation DeleteNews(
-    $input: DeleteBlogInput!
-    $condition: ModelBlogConditionInput
+    $input: DeleteNewsInput!
+    $condition: ModelNewsConditionInput
   ) {
-    deleteBlog(input: $input, condition: $condition) {
+    deleteNews(input: $input, condition: $condition) {
       id
       title
       category

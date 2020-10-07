@@ -8,6 +8,7 @@ function Add() {
   const [form, setForm] = useState({
     id: "",
     title: "",
+    category: "",
     content: "",
     createdAt: () => JSON.stringify(Date.now().toLocaleDateString),
     updatedAt: () => JSON.stringify(Date.now().toLocaleDateString),
@@ -52,6 +53,14 @@ function Add() {
           name="title"
           value={form.title}
           placeholder="Title"
+          type="text"
+        ></Input>
+        <br></br>
+        <Input
+          onChange={onChange}
+          name="category"
+          value={form.category}
+          placeholder="category"
           type="text"
         ></Input>
         <br></br>

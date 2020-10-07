@@ -3,7 +3,7 @@
 
 export const getNews = /* GraphQL */ `
   query GetNews($id: ID!) {
-    getBlog(id: $id) {
+    getNews(id: $id) {
       id
       title
       category
@@ -14,12 +14,12 @@ export const getNews = /* GraphQL */ `
   }
 `;
 export const listNews = /* GraphQL */ `
-  query ListNews(
-    $filter: ModelBlogFilterInput
+  query ListNewss(
+    $filter: ModelNewsFilterInput
     $limit: Int
     $nextToken: String
   ) {
-    listBlogs(filter: $filter, limit: $limit, nextToken: $nextToken) {
+    listNewss(filter: $filter, limit: $limit, nextToken: $nextToken) {
       items {
         id
         title

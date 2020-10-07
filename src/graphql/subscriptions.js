@@ -1,9 +1,9 @@
 /* eslint-disable */
 // this is an auto generated file. This will be overwritten
 
-export const onCreateBlog = /* GraphQL */ `
-  subscription OnCreateBlog {
-    onCreateBlog {
+export const onCreateNews = /* GraphQL */ `
+  subscription OnCreateNews {
+    onCreateNews {
       id
       title
       category
@@ -13,9 +13,9 @@ export const onCreateBlog = /* GraphQL */ `
     }
   }
 `;
-export const onUpdateBlog = /* GraphQL */ `
-  subscription OnUpdateBlog {
-    onUpdateBlog {
+export const onUpdateNews = /* GraphQL */ `
+  subscription OnUpdateNews {
+    onUpdateNews {
       id
       title
       category
@@ -25,9 +25,9 @@ export const onUpdateBlog = /* GraphQL */ `
     }
   }
 `;
-export const onDeleteBlog = /* GraphQL */ `
-  subscription OnDeleteBlog {
-    onDeleteBlog {
+export const onDeleteNews = /* GraphQL */ `
+  subscription OnDeleteNews {
+    onDeleteNews {
       id
       title
       category
