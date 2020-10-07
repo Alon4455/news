@@ -1,6 +1,6 @@
 {
 	"auth": {
-		"newsproj780d4611": {
+		"newsproj272a6fef": {
 			"service": "Cognito",
 			"providerPlugin": "awscloudformation",
 			"dependsOn": [],
@@ -17,7 +17,7 @@
 					"defaultAuthentication": {
 						"authenticationType": "AMAZON_COGNITO_USER_POOLS",
 						"userPoolConfig": {
-							"userPoolId": "authnewsproj780d4611"
+							"userPoolId": "authnewsproj272a6fef"
 						}
 					}
 				}

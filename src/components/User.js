@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import News from "./News";
 import { API, graphqlOperation } from "aws-amplify";
-import { listNewss } from "../graphql/queries";
+import { listNews } from "../graphql/queries";
 
 function User() {
   const [post, setPosts] = useState();
@@ -12,7 +12,7 @@ function User() {
 
   const fetchItem = async () => {
     try {
-      const newsData = await API.graphql(graphqlOperation(listNewss));
+      const newsData = await API.graphql(graphqlOperation(listNews));
       let newsList = newsData.data.listNewss.items;
       console.log("itemList", newsList);
       setstate(newsList);
